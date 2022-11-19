@@ -27,13 +27,14 @@
 -->
 <script>
   "use strict";
-  const userNum = +prompt("Введите число:")
-  const hundreds = Math.trunc( userNum /100) % 10
-   // функция trunc откидывает дробную часть
-  const ten = Math.trunc( userNum /10) % 10
-  const unit = userNum % 10
 
-  console.log(`hundreds: ${hundreds}, ten: ${ten}, unit: ${unit} `)
+  const userNum = +prompt("Введите число: ");
+  const hundreds = Math.trunc( userNum / 100) % 10;
+   // функция trunc откидывает дробную часть
+  const ten = Math.trunc( userNum / 10) % 10;
+  const unit = userNum % 10;
+
+  console.log(`hundreds: ${hundreds}, ten: ${ten}, unit: ${unit} `);
 
 </script>
 </body>

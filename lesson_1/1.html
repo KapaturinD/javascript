@@ -23,13 +23,13 @@
   "use strict";
 
   // Пользователь вводит температуру
-  const userTemp = prompt("Введите температуру в °C");
+  const userTemp = +prompt("Введите температуру в °C");
   // Формула Фаренгейта
-  const tempFahrenheit = (9 / 5);
+  const tempFahrenheit = (9 / 5)  * userTemp + 32;
   // Получения результата
-  const result = userTemp * tempFahrenheit + 32;
+  // const result = userTemp * tempFahrenheit + 32;
   // Вывожу пользователю полученую информацию
-  alert(`По Цельсию: ${userTemp}, По Фаренгейту: ${tempFahrenheit}`);
+  alert(`По Цельсию: ${Math.round(userTemp)}, По Фаренгейту: ${Math.round(tempFahrenheit)}`);
 
   console.log(result);
 
